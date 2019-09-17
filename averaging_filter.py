@@ -97,7 +97,6 @@ def myaverage_separable(im, filter_size):
                 for n in range(filter_size):
                     provision += padding[j + m, i + n] * x[0, n] * y[m, 0]
             imout[j, i] = provision
-   
     return imout
 
 im = 255 * rgb2gray(imread("exercise/Lenna2.png"))
